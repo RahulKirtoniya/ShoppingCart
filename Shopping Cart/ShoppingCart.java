@@ -8,8 +8,6 @@ public class ShoppingCart {
 		double[] prices = {20.0, 40.0, 50.0};
 		int[] quantities = new int[3];
 		boolean[] giftWraps = new boolean[3];
-
-		// Get quantity and gift wrap information for each product
 		for (int i = 0; i < products.length; i++) {
 			System.out.print("Enter the quantity of " + products[i] + ": ");
 			quantities[i] = scanner.nextInt();
@@ -83,8 +81,6 @@ public class ShoppingCart {
 
 		return giftWrapFee;
 	}
-
-	// Function to calculate shipping fee
 	private static double calculateShippingFee(int[] quantities) {
 		int totalPackages = 0;
 
